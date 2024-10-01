@@ -35,4 +35,8 @@ contract TaskManager {
     function getTaskStatus() public view returns (Status) {
         return taskStatus;
     }
+
+    function cancel() public {
+        taskStatus = Status.Canceled;
+    }
 }
